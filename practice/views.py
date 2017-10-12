@@ -6,6 +6,9 @@ from django.conf import settings
 import json
 import operator
 from userprofile.models import Profile
+from django.core.mail import send_mail
+
+
 def leaderboard(request):
     context = {}
     l = {}
@@ -24,8 +27,10 @@ def track(request,id):
     return render(request,"tracks.html",context)
 
 def all_tracks(request):
+    context={}
     track = Track.objects.all()
-    return render(request,"all_tracks.html",{'track':track})
+    context['track']=track
+    return render(request,"all_tracks.html",context)
 
 class QuestionList(ListView):
     model = Question

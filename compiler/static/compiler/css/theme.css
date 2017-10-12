@@ -115,3 +115,34 @@ ol li.list-group-item {
 #testcases {
     display: none;
 }
+
+#nav-main{
+    background: #199EB8;
+    height: 70px;
+}
+
+#facebook-nav{
+    color: white;
+    margin-right: 40px;
+    
+    padding-top: !important 30px; 
+}
+
+#logo{
+    max-height: 30px !important;
+}
+.table-fit {
+     width: 1px;
+ }
+
+ /*#nav-main a{
+    color: white;
+    background: #199EB8;
+ }
+ #nav-main button {
+    background-color: black;
+}*/
+
+table tr:hover td{
+    background-color: white;
+ }
